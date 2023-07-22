@@ -1,0 +1,22 @@
+const proxyquire = require('proxyquire').noCallThru();
+const path = require('path');
+
+const {
+  <% for (const functionName of functions) { -%>
+  <%= functionName %>,
+  <% } -%>
+} = proxyquire(`${path.resolve("./")}/<%= filePath %>`, {
+<% for (const require of requires) { -%>
+  '<%= require.module %>': {},
+<% } -%>
+});
+
+describe('<%= filePath %>', function () {
+<% for (const functionName of functions) { %>
+  describe('<%= functionName %>()', function () {
+    it('', function (done) {
+
+    });
+  });
+<% } -%>
+});

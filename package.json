@@ -1,0 +1,30 @@
+{
+  "name": "bober.js",
+  "version": "0.0.1",
+  "description": "something awesome!",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/space7panda/bober.js.git"
+  },
+  "keywords": [
+    "bober"
+  ],
+  "author": "space7panda",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/space7panda/bober.js/issues"
+  },
+  "homepage": "https://github.com/space7panda/bober.js#readme",
+  "dependencies": {
+    "commander": "^11.0.0",
+    "directory-tree": "^3.5.1",
+    "ejs": "^3.1.9",
+    "espree": "^9.6.1",
+    "fs-extra": "^11.1.1",
+    "proxyquire": "^2.1.3"
+  }
+}
